@@ -13,7 +13,7 @@ const STYLES = StyleSheet.create({
     fontWeight: '600',
     color: COLORS.brand,
     textAlign: 'center',
-    padding: 4,
+    padding: 5,
   },
   buttonPrimaryContainer: {
     flex: 1,
@@ -29,6 +29,10 @@ const STYLES = StyleSheet.create({
     textAlign: 'center',
     padding: 4,
   },
+  buttonPrimaryTextMd: {
+    fontSize: 16,
+    padding: 14,
+  }
 });
 
 export default STYLES;

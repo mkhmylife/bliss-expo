@@ -1,18 +1,22 @@
 import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
 import {COLORS} from "../lib/colors";
 import STYLES from "../lib/styles";
+import {useTranslation} from "react-i18next";
+import {router} from "expo-router";
 
 export default function LoginBox() {
 
+  const { t } = useTranslation();
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>立即註冊或登入並開始預約！</Text>
+      <Text style={styles.text}>{t('loginBox.title')}</Text>
       <View style={styles.buttons}>
-        <TouchableOpacity style={[STYLES.buttonContainer]}>
-          <Text style={[STYLES.buttonText]}>登入</Text>
+        <TouchableOpacity onPress={() => router.push('/(auth)/login')} style={[STYLES.buttonContainer]}>
+          <Text style={[STYLES.buttonText]}>{t('loginBox.login')}</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[STYLES.buttonPrimaryContainer]}>
-          <Text style={[STYLES.buttonPrimaryText]}>註冊</Text>
+        <TouchableOpacity onPress={() => router.push('/(auth)/register')} style={[STYLES.buttonPrimaryContainer]}>
+          <Text style={[STYLES.buttonPrimaryText]}>{t('loginBox.register')}</Text>
         </TouchableOpacity>
       </View>
     </View>

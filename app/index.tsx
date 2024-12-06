@@ -1,17 +1,19 @@
-import {Image, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {Image, SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import LoginBox from "../components/LoginBox";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <SafeAreaView>
-        <View style={styles.header}>
-          <Image
-            style={{ width: 88, height: 24 }}
-            source={require('../assets/images/logo.png')} />
-        </View>
-        <LoginBox />
-      </SafeAreaView>
+      <ScrollView>
+        <SafeAreaView>
+          <View style={styles.header}>
+            <Image
+              style={{ width: 88, height: 24 }}
+              source={require('../assets/images/logo.png')} />
+          </View>
+          <LoginBox />
+        </SafeAreaView>
+      </ScrollView>
     </View>
   );
 }
