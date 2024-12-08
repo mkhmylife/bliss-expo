@@ -1,4 +1,5 @@
 {
+	"areas.causewayBay": "",
 	"forgotPasswordScreen.enterPin": "",
 	"forgotPasswordScreen.resetPassword": "",
 	"forgotPasswordScreen.sendAgain": "",
@@ -38,5 +39,7 @@
 	"registerScreen.password": "",
 	"registerScreen.phoneNumber": "",
 	"registerScreen.referralCode": "",
-	"registerScreen.title": ""
+	"registerScreen.title": "",
+	"shopDetailScreen.bookNow": "",
+	"shopListsHeader.nearby-recommendation": ""
 }

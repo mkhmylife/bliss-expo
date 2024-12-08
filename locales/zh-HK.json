@@ -1,4 +1,5 @@
 {
+	"areas.causewayBay": "銅鑼灣",
 	"forgotPasswordScreen.enterPin": "請輸入6位數字驗證碼",
 	"forgotPasswordScreen.resetPassword": "重設密碼",
 	"forgotPasswordScreen.sendAgain": "再次傳送",
@@ -38,5 +39,7 @@
 	"registerScreen.password": "密碼",
 	"registerScreen.phoneNumber": "手提電話",
 	"registerScreen.referralCode": "推薦碼",
-	"registerScreen.title": "請填妥以下資料： "
+	"registerScreen.title": "請填妥以下資料： ",
+	"shopDetailScreen.bookNow": "立即預約",
+	"shopListsHeader.nearby-recommendation": "附近推薦"
 }

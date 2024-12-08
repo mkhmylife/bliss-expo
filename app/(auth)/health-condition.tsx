@@ -33,6 +33,7 @@ export default function HealthConditionScreen() {
 
   const onSubmit = useCallback((data: RegisterFormDto) => {
     console.log(data);
+    router.replace('/');
   }, []);
 
 
@@ -185,55 +186,55 @@ export default function HealthConditionScreen() {
                       <Text style={[styles.label]}>
                         {t('healthConditionScreen.condition1')}
                       </Text>
-                      <View style={{ backgroundColor: value.includes('1') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
+                      <View style={{ backgroundColor: value && value.includes('1') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => onChange('0')} activeOpacity={0.8}  style={styles.parentFlexBox}>
                       <Text style={[styles.label]}>
                         {t('healthConditionScreen.condition2')}
                       </Text>
-                      <View style={{ backgroundColor: value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
+                      <View style={{ backgroundColor: value && value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => onChange('3')} activeOpacity={0.8}  style={styles.parentFlexBox}>
                       <Text style={[styles.label]}>
                         {t('healthConditionScreen.condition3')}
                       </Text>
-                      <View style={{ backgroundColor: value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
+                      <View style={{ backgroundColor: value && value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => onChange('0')} activeOpacity={0.8}  style={styles.parentFlexBox}>
                       <Text style={[styles.label]}>
                         {t('healthConditionScreen.condition4')}
                       </Text>
-                      <View style={{ backgroundColor: value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
+                      <View style={{ backgroundColor: value && value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => onChange('0')} activeOpacity={0.8}  style={styles.parentFlexBox}>
                       <Text style={[styles.label]}>
                         {t('healthConditionScreen.condition5')}
                       </Text>
-                      <View style={{ backgroundColor: value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
+                      <View style={{ backgroundColor: value && value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => onChange('0')} activeOpacity={0.8}  style={styles.parentFlexBox}>
                       <Text style={[styles.label]}>
                         {t('healthConditionScreen.condition6')}
                       </Text>
-                      <View style={{ backgroundColor: value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
+                      <View style={{ backgroundColor: value && value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => onChange('0')} activeOpacity={0.8}  style={styles.parentFlexBox}>
                       <Text style={[styles.label]}>
                         {t('healthConditionScreen.condition7')}
                       </Text>
-                      <View style={{ backgroundColor: value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
+                      <View style={{ backgroundColor: value && value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => onChange('0')} activeOpacity={0.8}  style={styles.parentFlexBox}>
                       <Text style={[styles.label]}>
                         {t('healthConditionScreen.condition8')}
                       </Text>
-                      <View style={{ backgroundColor: value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
+                      <View style={{ backgroundColor: value && value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => onChange('0')} activeOpacity={0.8}  style={styles.parentFlexBox}>
                       <Text style={[styles.label]}>
                         {t('healthConditionScreen.condition9')}
                       </Text>
-                      <View style={{ backgroundColor: value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
+                      <View style={{ backgroundColor: value && value.includes('2') ? '#49454F' : '#FFF', borderWidth: 1, borderColor: '#49454F', width: 14, height: 14, borderRadius: 100 }} />
                     </TouchableOpacity>
                   </View>
                 </View>
