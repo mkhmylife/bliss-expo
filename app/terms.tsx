@@ -1,11 +1,10 @@
-import {Image, SafeAreaView, ScrollView, StyleSheet, useWindowDimensions, View} from "react-native";
+import {SafeAreaView, ScrollView, StyleSheet, useWindowDimensions, View} from "react-native";
 import * as React from "react";
-import BackButton from "../components/BackButton";
 import RenderHtml from 'react-native-render-html';
 import {COLORS} from "../lib/colors";
 import AuthHeader from "../components/AuthHeader";
 
-const source = {
+export const termsSource = {
   html: `
 <h1>預約須知</h1>
 <ul>
@@ -42,7 +41,7 @@ export default function TermsScreen() {
         <AuthHeader showSegmentControl={false} />
         <RenderHtml
           contentWidth={width}
-          source={source}
+          source={termsSource}
           baseStyle={{ fontSize: 16, lineHeight: 24, color: COLORS.brandNeutral900 }}
           tagsStyles={{
             h1: {fontSize: 20},

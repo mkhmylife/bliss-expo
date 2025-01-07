@@ -117,7 +117,7 @@ export default function ShopDetailScreen() {
           <Text style={styles.text12}>今天 12:00</Text>
         </View>
 
-        <TouchableOpacity activeOpacity={0.8} style={[STYLES.buttonPrimaryContainer, { flex: 1}]}>
+        <TouchableOpacity onPress={() => router.push('reservation/step1')} activeOpacity={0.8} style={[STYLES.buttonPrimaryContainer, { flex: 1}]}>
           <Text style={[STYLES.buttonPrimaryText, STYLES.buttonPrimaryTextMd]}>
             {t('shopDetailScreen.bookNow')}
           </Text>
